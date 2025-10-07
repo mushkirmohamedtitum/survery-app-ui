@@ -67,7 +67,7 @@ CREATE TABLE IF NOT EXISTS `section_a` (
 
 DROP TABLE IF EXISTS `section_b`;
 CREATE TABLE IF NOT EXISTS `section_b` (
-`id` int NOT NULL,
+`id` INT NOT NULL AUTO_INCREMENT,
 `interviewer_id` varchar(10) CHARACTER SET sjis COLLATE sjis_bin NOT NULL,
 `serial_no` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
 -- `status` int NOT NULL DEFAULT '0',
@@ -179,7 +179,8 @@ CREATE TABLE IF NOT EXISTS `section_b` (
 -- `b4_`
 -- `b4_`
 -- `b4_`
-`date_created` datetime DEFAULT NULL
+`date_created` datetime DEFAULT NULL,
+PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 -- --------------------------------------------------------
