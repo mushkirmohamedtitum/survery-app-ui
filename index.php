@@ -1,5 +1,8 @@
 <?php
 $translation = include('./translations/sectionC1.php');
+$translation = include('./translations/sectionC2.php');
+$translation = include('./translations/sectionC3.php');
+$translation = include('./translations/sectionC3_2.php');
 $questions = $translation['questions'];
 
 $routeArr = include('./route.php');
